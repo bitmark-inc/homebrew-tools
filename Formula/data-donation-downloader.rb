@@ -1,10 +1,10 @@
 require "language/go"
 
 class DataDonationDownloader < Formula
-  desc "Data donation command-line-tool"
+  desc "Data donation Downloader"
   homepage "https://github.com/bitmark-inc/data-donation-downloader"
-  url "https://github.com/bitmark-inc/data-donation-downloader/archive/0.1.tar.gz"
-  sha256 "ce98e033ed7fef6422c84b50fa6b9bbabcc68bcd9d98772a53b85a2a0343924f"
+  url "https://github.com/bitmark-inc/data-donation-downloader/archive/0.2.tar.gz"
+  sha256 "82fb5209207786edb5870f7dc81882f8798de22abb7f2afcd1031fbe9ff3d6aa"
   head "https://github.com/bitmark-inc/data-donation-downloader.git"
 
   depends_on "go" => :build
@@ -22,11 +22,6 @@ class DataDonationDownloader < Formula
   go_resource "github.com/bitmark-inc/go-bitmarklib" do
     url "https://github.com/bitmark-inc/go-bitmarklib.git",
         :revision => "5f4e12b9aae8af5a52af6bdd9394fb8616335a76"
-  end
-
-  go_resource "github.com/btcsuite/golangcrypto" do
-    url "https://github.com/btcsuite/golangcrypto.git",
-        :revision => "53f62d9b43e87a6c56975cf862af7edf33a8d0df"
   end
 
   go_resource "github.com/sirupsen/logrus" do
