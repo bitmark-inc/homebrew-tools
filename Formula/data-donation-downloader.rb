@@ -4,7 +4,7 @@ class DataDonationDownloader < Formula
   desc "Data donation command-line-tool"
   homepage "https://github.com/bitmark-inc/data-donation-downloader"
   url "https://github.com/bitmark-inc/data-donation-downloader/archive/0.1.tar.gz"
-  sha256 "a304c29267cf7e00b7299b6ac8da0317f2f4f4096acb6cf817d4c745e0dee8b4"
+  sha256 "ce98e033ed7fef6422c84b50fa6b9bbabcc68bcd9d98772a53b85a2a0343924f"
   head "https://github.com/bitmark-inc/data-donation-downloader.git"
 
   depends_on "go" => :build
